@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "yekan-medium";
+  src: url("fonts/YekanBakh/YekanBakh-Medium.ttf");
+}
+@font-face {
+  font-family: "sans-medium";
+  src: url("fonts/Sans/Sans-Medium.ttf");
+}
+
+@layer components {
+  .container {
+    @apply max-w-full flex flex-col;
+  }
+  .second-container {
+    @apply xl:!px-33 !px-4;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+body {
+  font-family: "sans-medium";
+}
