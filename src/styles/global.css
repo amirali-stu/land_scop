@@ -8,6 +8,10 @@
   font-family: "sans-medium";
   src: url("fonts/Sans/Sans-Medium.ttf");
 }
+@font-face {
+  font-family: "sans-regular";
+  src: url("fonts/Sans/Sans-Regular.ttf");
+}
 
 @layer components {
   .container {
@@ -22,6 +26,60 @@
   }
 }
 
+@theme {
+  --color-primary-color: #97b545;
+    --color-secondary-color: #0f3714;
+    --color-third-color: #ddb01d;
+    --color-four-color: #1d5823;
+    --color-body_bg-color: #fff;
+    --color-primary-color-rgb: 151, 181, 69;
+    --color-secondary-color-rgb: 15, 55, 20;
+    --color-third-color-rgb: 221, 176, 29;
+    --color-four-color-rgb: 29, 88, 35;
+    --color-body_bg-color-rgb: 255, 255, 255;
+    --color-link-color: #000000;
+    --color-link-color-hover: #97B545;
+    --color-link-color-active: #97B545;
+    --color-gradient-color-from: #fff48d;
+    --color-gradient-color-to: #f4be29;
+    --color-gradient-two-color-from_two: #fff48d;
+    --color-gradient-two-color-to_two: #f4be29;
+
+    --font-regular:"sans-regular"
+}
+
+
 body {
   font-family: "sans-medium";
+}
+
+.title-with-line {
+  position: relative;
+
+}
+
+.title-with-line::after {
+  content: "";
+  display: block;
+  width: 70px;        /* طول خط */
+  height: 3px;  
+  left: 50%;
+  transform: translateX(-50%);      /* ضخامت خط */
+  background-color: #22c55e; /* سبز */
+  margin-top: 16px;    /* فاصله از متن */
+}
+
+.transition-custom-style{
+
+transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+}
+
+.background-image-custom {
+  background-image: url("./../../public/images/human.jpg");
+  width: 100%;
+  height: 500px;
+  border-radius: 0px 80px 0px 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

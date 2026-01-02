@@ -1,9 +1,20 @@
+import { LiaShippingFastSolid } from "react-icons/lia";
+import WhatUsTemplate from "./WhatUsTemplate";
+
 export default function WhatUs() {
   return (
-    <section className="w-full overflow-x-hidden">
-      <div>
-        <div className="flex-center bg-[#EAF0DA]"></div>
+    <section className="second-container w-full">
+      <div className="w-full bg-[#EAF0DA] rounded-xl h-[173px] flex items-center justify-center relative">
+       <WhatUsTemplate />
+       <WhatUsTemplate />
+       <WhatUsTemplate />
+       <WhatUsTemplate />
       </div>
     </section>
   );
 }
+
+
+
+
+
