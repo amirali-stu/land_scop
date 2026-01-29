@@ -28,26 +28,25 @@
 
 @theme {
   --color-primary-color: #97b545;
-    --color-secondary-color: #0f3714;
-    --color-third-color: #ddb01d;
-    --color-four-color: #1d5823;
-    --color-body_bg-color: #fff;
-    --color-primary-color-rgb: 151, 181, 69;
-    --color-secondary-color-rgb: 15, 55, 20;
-    --color-third-color-rgb: 221, 176, 29;
-    --color-four-color-rgb: 29, 88, 35;
-    --color-body_bg-color-rgb: 255, 255, 255;
-    --color-link-color: #000000;
-    --color-link-color-hover: #97B545;
-    --color-link-color-active: #97B545;
-    --color-gradient-color-from: #fff48d;
-    --color-gradient-color-to: #f4be29;
-    --color-gradient-two-color-from_two: #fff48d;
-    --color-gradient-two-color-to_two: #f4be29;
+  --color-secondary-color: #0f3714;
+  --color-third-color: #ddb01d;
+  --color-four-color: #1d5823;
+  --color-body_bg-color: #fff;
+  --color-primary-color-rgb: 151, 181, 69;
+  --color-secondary-color-rgb: 15, 55, 20;
+  --color-third-color-rgb: 221, 176, 29;
+  --color-four-color-rgb: 29, 88, 35;
+  --color-body_bg-color-rgb: 255, 255, 255;
+  --color-link-color: #000000;
+  --color-link-color-hover: #97b545;
+  --color-link-color-active: #97b545;
+  --color-gradient-color-from: #fff48d;
+  --color-gradient-color-to: #f4be29;
+  --color-gradient-two-color-from_two: #fff48d;
+  --color-gradient-two-color-to_two: #f4be29;
 
-    --font-regular:"sans-regular"
+  --font-regular: "sans-regular";
 }
-
 
 body {
   font-family: "sans-medium";
@@ -55,24 +54,21 @@ body {
 
 .title-with-line {
   position: relative;
-
 }
 
 .title-with-line::after {
   content: "";
   display: block;
-  width: 70px;        /* طول خط */
-  height: 3px;  
+  width: 70px; /* طول خط */
+  height: 3px;
   left: 50%;
-  transform: translateX(-50%);      /* ضخامت خط */
+  transform: translateX(-50%); /* ضخامت خط */
   background-color: #22c55e; /* سبز */
-  margin-top: 16px;    /* فاصله از متن */
+  margin-top: 16px; /* فاصله از متن */
 }
 
-.transition-custom-style{
-
-transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-
+.transition-custom-style {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .background-image-custom {
@@ -82,4 +78,64 @@ transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   border-radius: 0px 80px 0px 80px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.list-style-tick {
+  color: white;
+  list-style: url("images/tick.svg");
+}
+
+.our-img1 {
+  background-image: url("./../../public/images/our/img1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.our-img1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(to right, #1d5823, transparent);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.our-img2 {
+  background-image: url("./../../public/images/our/img2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.our-img2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(to left, #97b545, transparent);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.achievement-bg {
+  background-image: url("./../../public/images/achievement/bg1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.achievement-bg::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  inset: 0;
+  height: 100%;
+  background-color: #1c4b217d;
 }
