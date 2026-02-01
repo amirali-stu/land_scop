@@ -1,4 +1,5 @@
 import { FaLeaf } from "react-icons/fa";
+import { IoIosLeaf } from "react-icons/io";
 
 export default function Describe() {
   return (
@@ -32,7 +33,12 @@ export default function Describe() {
         </div>
         <div className="w-[40%] flex items-start flex-col">
           <div className="w-full flex items-start flex-col border-b border-dashed border-b-[#97B545]">
-            <span className="text-xs">ما که هستیم</span>
+            <p className="text-sm flex items-center gap-x-2 flex-row-reverse">
+              ما که هستیم
+              <span>
+                <IoIosLeaf size={24} className="text-[#97B545] rotate-40" />
+              </span>
+            </p>
             <h4 className="text-4xl max-w-[500px] text-start">
               طراحی حرفه‌ای فضای سبز و مراقبت از باغ
             </h4>

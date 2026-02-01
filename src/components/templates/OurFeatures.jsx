@@ -54,14 +54,17 @@ export default function OurFeatures() {
       <img
         src="images/our/plant1.png"
         className="absolute bottom-0 right-0"
+        loading="lazy"
       />
       <img
         src="images/our/plant2.png"
         className="absolute bottom-0 right-70"
+        loading="lazy"
       />
       <img
         src="images/our/plant3.png"
         className="absolute bottom-0 left-0"
+        loading="lazy"
       />
     </div>
   );
