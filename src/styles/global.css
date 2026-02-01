@@ -209,8 +209,6 @@ body {
   justify-content: center;
 }
 
-/*! test */
-
 .show {
   background-color: #97b545;
   -webkit-border-radius: 0 80px;
@@ -266,8 +264,6 @@ body {
   transition: all 0.3s ease-in;
 }
 
-/*! test */
-
 .bg-linear_custom {
   background: linear-gradient(
     180deg,
@@ -294,4 +290,15 @@ body {
   background-color: transparent;
   border-radius: 1000px;
   border: 2px dashed rgba(29, 88, 35, 0.5);
+}
+
+.pricing-package_bg {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #eaf0da 0%, #ffffff00 100%);
+}
+
+#top_level {
+  transition: all 0.6s linear;
+  transform: translateY(-30px);
+  box-shadow: 0px 10px 20px #0000000f;
 }
