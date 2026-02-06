@@ -2,7 +2,7 @@ import { LuHandHelping } from "react-icons/lu";
 
 export default function OurFeatures() {
   return (
-    <div className="w-full h-140 bg-[#EAF0DA] mt-40 flex flex-wrap relative">
+    <section className="w-full h-140 bg-[#EAF0DA] mt-40 flex flex-wrap relative">
       <div className="w-full h-60 flex relative z-10 -mt-20">
         <div className="w-[1400px] h-full bg-[#1D5823] rounded-t-2xl rounded-br-2xl flex items-center overflow-hidden">
           <div
@@ -66,6 +66,6 @@ export default function OurFeatures() {
         className="absolute bottom-0 left-0"
         loading="lazy"
       />
-    </div>
+    </section>
   );
 }

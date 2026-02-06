@@ -8,7 +8,7 @@ export default function PricingPackage({ best = "" }) {
     >
       {best && (
         <img
-          src="images/top-level.svg"
+          src="images/svgs/top-level.svg"
           className="absolute -top-[7.5px] left-10 rotate-y-180"
         />
       )}

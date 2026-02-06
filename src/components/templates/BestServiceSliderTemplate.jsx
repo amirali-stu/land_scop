@@ -6,6 +6,7 @@ export default function BestServiceSliderTemplate() {
       <div className="rounded-2xl relative overflow-hidden h-[308px]">
         <img
           src="images/best-service/img1.webp"
+          loading="lazy"
           className=" object-cover duration-500 w-full h-full  transition-all group-hover:scale-[1.06]"
         />
       </div>

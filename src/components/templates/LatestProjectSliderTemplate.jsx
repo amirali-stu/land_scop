@@ -8,6 +8,7 @@ function LatestProjectSliderTemplate() {
       <img
         src="images/our/img1.webp"
         className="w-full h-full absolute inset-0"
+        loading="lazy"
       />
 
       <div className="absolute delay-75 w-full h-full inset-0 opacity-0 invisible bg-[#0f371480] group-hover:opacity-100 group-hover:visible transition-all duration-500" />
@@ -48,8 +49,6 @@ function LatestProjectSliderTemplate() {
       </div>
 
       <div className="absolute bottom-10 delay-200 rounded-b-[25px] transition-all rounded-tr-[25px] duration-500 opacity-0 group-hover:opacity-100 group-hover:bottom-0 left-0 right-auto w-full h-[40%] linear-gradient-custom-bg" />
-
-
     </article>
   );
 }

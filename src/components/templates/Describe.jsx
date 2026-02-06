@@ -3,9 +3,9 @@ import { IoIosLeaf } from "react-icons/io";
 
 export default function Describe() {
   return (
-    <div className="second-container w-full">
+    <section className="second-container container mx-auto w-full">
       <div className="flex items-center justify-center flex-col gap-y-4 my-28">
-        <h2 className="text-4xl text-[#0A250E] font-bold">
+        <h2 className="text-[45px] text-[#0A250E] font-bold">
           به فضاهای بیرونی خود جان ببخشید
         </h2>
         <p className="text-center text-[#0F3714B3] text-[17.5px] font-regular leading-7">
@@ -62,6 +62,6 @@ export default function Describe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

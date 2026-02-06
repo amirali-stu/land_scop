@@ -1,7 +1,9 @@
 import AchievementContainer from "./components/templates/AchievementContainer";
 import BestService from "./components/templates/BestService";
+import CustomerReviews from "./components/templates/CustomerReviews";
 import Describe from "./components/templates/Describe";
 import LatestProjects from "./components/templates/latestProjects";
+import OurBlogs from "./components/templates/OurBlogs";
 import OurFeatures from "./components/templates/OurFeatures";
 import PricingPackagesSmart from "./components/templates/PricingPackagesSmart";
 import Slider from "./components/templates/Slider";
@@ -22,60 +24,8 @@ export default function AppContainer() {
       <WhyUs />
       <WorkProcess />
       <PricingPackagesSmart />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <CustomerReviews />
+      <OurBlogs />
     </>
   );
 }

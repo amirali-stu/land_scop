@@ -12,13 +12,13 @@ export default function OurExperiences() {
       </div>
       <div className="flex items-center gap-x-2">
         <div className="flex flex-col justify-center items-center gap-y-2">
-          <img src="images/null.svg" className="w-[70px] h-[70px]" />
+          <img src="images/svgs/null.svg" className="w-[70px] h-[70px]" />
           <p className="max-w-40 text-wrap text-center text-[#0F3714] text-[17px]">
             شیوه‌های بدون آفت‌کش
           </p>
         </div>
         <div className="flex flex-col justify-center items-center gap-y-2">
-          <img src="images/green.svg" className="w-[70px] h-[70px]" />
+          <img src="images/svgs/green.svg" className="w-[70px] h-[70px]" />
           <p className="max-w-40 text-wrap text-center text-[#0F3714] text-[17px]">
             راهکارهای سبز بلندمدت
           </p>

@@ -1,6 +1,6 @@
 
 export default function Slider() {
   return (
-    <div className="w-full bg-green-600 h-140 flex-center relative z-0">Slider</div>
+    <section className="w-full second-container bg-green-600 h-140 flex-center relative z-0">Slider</section>
   )
 }

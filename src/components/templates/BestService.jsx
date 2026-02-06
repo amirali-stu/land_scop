@@ -4,7 +4,7 @@ import BestServiceSliderTemplate from "./BestServiceSliderTemplate";
 
 export default function BestService() {
   return (
-    <div className="second-container w-full bg-[#0F3714] bg-custom overflow-hidden py-20">
+    <section className="second-container w-full bg-[#0F3714] bg-custom overflow-hidden py-20">
       {/* text */}
       <div className="w-full flex items-center justify-between">
         <div className="text-white flex flex-col items-start gap-y-4">
@@ -14,7 +14,7 @@ export default function BestService() {
               <IoIosLeaf size={24} className="text-[#97B545] rotate-40" />
             </span>
           </p>
-          <h2 className="text-4xl">فضای شما. مراقبت ما. طبیعتاً بهتر</h2>
+          <h2 className="text-[45px]">فضای شما. مراقبت ما. طبیعتاً بهتر</h2>
           <p className="text-[#FFFFFFCC] text-[17px] max-w-155">
             از طرح‌های رویایی گرفته تا نگهداری باشکوه، خدمات ما فضاهای بیرونی
             شما را به آثار هنری زنده تبدیل می‌کند.
@@ -33,6 +33,6 @@ export default function BestService() {
         <BestServiceSliderTemplate />
         <BestServiceSliderTemplate />
       </div>
-    </div>
+    </section>
   );
 }

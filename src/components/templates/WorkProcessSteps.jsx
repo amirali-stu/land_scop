@@ -9,7 +9,7 @@ export default function WorkProcessSteps() {
           id="svg-style"
           className="bg-four-color text-white w-[97px] h-[97px] flex-center rounded-full"
         >
-          <img src="images/consulting.svg" />
+          <img src="images/svgs/consulting.svg" />
         </div>
         <h5 className="text-white text-2xl leading-6">مشاوره و برنامه ریزی</h5>
       </div>

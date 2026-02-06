@@ -21,7 +21,7 @@ export default function OurCommitments() {
             <span className="text-white italic text-xs">مدیرعامل شرکت</span>
           </div>
         </div>
-        <img src="images/signature.svg" />
+        <img src="images/svgs/signature.svg" />
       </div>
       <button className="text-[#0F3714] bg-white rounded-lg px-7.5 py-4 flex items-center gap-x-3 cursor-pointer text-center">
         چگونه کار می‌کنیم

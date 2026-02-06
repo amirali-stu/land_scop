@@ -7,8 +7,16 @@ export default function WhyUs() {
   return (
     <section className=" why-us_bg">
       <div className="second-container relative w-full bg-white h-[80%] flex flex-col gap-y-5">
-        <img src="images/Vase.webp" className="absolute -right-8 top-0" />
-        <img src="images/our/plant2.png" className="absolute left-20 top-100" />
+        <img
+          src="images/Vase.webp"
+          className="absolute -right-8 top-0"
+          loading="lazy"
+        />
+        <img
+          src="images/our/plant2.png"
+          className="absolute left-20 top-100"
+          loading="lazy"
+        />
 
         <div className="relative z-10 flex items-center justify-between -mt-10 px-10">
           <div className="text-black flex flex-col gap-y-10">
@@ -19,7 +27,7 @@ export default function WhyUs() {
                 </span>
                 بهترین خدمات برای شما
               </p>
-              <h2 className="text-4xl">چرا ما را انتخاب کنید</h2>
+              <h2 className="text-[45px]">چرا ما را انتخاب کنید</h2>
             </div>
             <p className="text-[#0F3714CC] text-[15px] max-w-140">
               ما خلاقیت، دقت و کیفیت را به هر فضایی می‌آوریم. با اشتیاق به فضای
@@ -45,6 +53,7 @@ export default function WhyUs() {
           <img
             src="images/friends.webp"
             className="rounded-[25px] w-[600px] h-[507px]"
+            loading="lazy"
           />
         </div>
         <div className="relative z-10 mt-20 !min-h-[438px] overflow-hidden flex items-center rounded-[25px]">

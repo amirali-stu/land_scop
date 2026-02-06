@@ -54,6 +54,7 @@ a {
 
 body {
   font-family: "sans-medium";
+  overflow-x: hidden;
 }
 
 .title-with-line {
@@ -161,11 +162,6 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
-
-/* هنوز flash به svg واقعی تبدیل نشده */
-/* .list-style-flash {
-  list-style: url("images/flash.svg");
-} */
 
 .linear-gradient-custom-bg {
   background: linear-gradient(
@@ -301,4 +297,146 @@ body {
   transition: all 0.6s linear;
   transform: translateY(-30px);
   box-shadow: 0px 10px 20px #0000000f;
+}
+
+.bg-custom_jangle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  background-image: url(../../public/images/jangle.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*!  infinity slider  */
+.logo-slider {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  align-items: center;
+  background-color: #eaf0da;
+  position: relative;
+  height: 200px;
+}
+
+.logo-slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 200px;
+  background-image: linear-gradient(to right, #eaf0da, transparent);
+  z-index: 1;
+}
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 200px;
+  background-image: linear-gradient(to left, #eaf0da, transparent);
+  z-index: 1;
+}
+
+.logo-track {
+  width: 150px;
+  position: absolute;
+  animation: 10s linear infinite;
+  right: 1600px;
+  animation-name: scroll;
+  filter:;
+}
+
+@keyframes scroll {
+  to {
+    right: -200px;
+  }
+}
+.logo1 {
+  animation-delay: -26.25s;
+}
+.logo2 {
+  animation-delay: -22.5s;
+}
+.logo3 {
+  animation-delay: -18.75s;
+}
+.logo4 {
+  animation-delay: -15s;
+}
+.logo5 {
+  animation-delay: -11.25s;
+}
+.logo6 {
+  animation-delay: -7.5s;
+}
+.logo7 {
+  animation-delay: -3.75s;
+}
+.logo8 {
+  animation-delay: 0s;
+}
+
+/*!  infinity slider  */
+
+.bg-custom_image {
+  background-image: url("../../public/images/footer/bg2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.bg-custom_image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: #0f3714b9;
+}
+
+.before_line {
+  position: relative;
+}
+
+.before_line::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #97b545;
+}
+
+.active-link {
+  padding-right: 20px;
+}
+
+.active-link img {
+  transform: scale(100%);
+  right: 4px;
+}
+
+.divide-before{
+  position: relative;
+}
+
+
+.divide-before::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.388);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
 }
