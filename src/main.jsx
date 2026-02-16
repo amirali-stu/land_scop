@@ -14,6 +14,7 @@ import Users from "./Users";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+      {/* header */}
       <header>
         <TopHeader />
         <NavHeader />
