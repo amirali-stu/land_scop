@@ -8,23 +8,30 @@ import InfinitySlider from "./components/modules/Footer/InfinitySlider";
 import AreUeoReady from "./components/modules/Footer/AreUeoReady";
 import Footer from "./components/modules/Footer/Footer";
 import Rules from "./components/modules/Footer/Rules";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Users from "./Users";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <header>
-      <TopHeader />
-      <NavHeader />
-    </header>
+    <BrowserRouter>
+      <header className="landscop-container">
+        <TopHeader />
+        <NavHeader />
+      </header>
 
-    <main>
-      <App />
-    </main>
+      <main>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/users" element={<Users />} />
+        </Routes>
+      </main>
 
-    <footer>
-      <InfinitySlider />
-      <AreUeoReady />
-      <Footer />
-      <Rules />
-    </footer>
+      <footer>
+        <InfinitySlider />
+        <AreUeoReady />
+        <Footer />
+        <Rules />
+      </footer>
+    </BrowserRouter>
   </StrictMode>,
 );

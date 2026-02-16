@@ -11,7 +11,7 @@ import SocialMediaTemplate from "./SocialMediaTemplate";
 
 export default function TopHeader() {
   return (
-    <div className="second-container w-full flex items-center justify-between">
+    <div className="hidden xl:block second-container w-full flex items-center justify-between">
       <div className="w-full flex items-center justify-between  border-b border-b-gray-200 py-5">
         <ul className="flex items-center *:flex *:flex-row-reverse *:items-center *:gap-x-2 **:text-[#50680F] *:text-sm *:transition-all *:duration-300 *:hover:text-[#97b545] *:px-2.5 *:relative">
           <li>

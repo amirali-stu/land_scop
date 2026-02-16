@@ -2,15 +2,15 @@ import { IoArrowBack } from "react-icons/io5";
 
 export default function OurCommitments() {
   return (
-    <article className="max-w-[429px] h-full flex flex-col px-7.5 py-10 items-center justify-between bg-[#0F3714]">
+    <article className="max-w-[429px] h-full flex max-lg:gap-y-8 flex-col px-7.5 py-10 items-center justify-between bg-[#0F3714]">
       <div>
-        <h3 className="text-[30px] text-center text-white">تعهدات ما</h3>
-        <p className="text-white text-[15px] text-center">
+        <h3 className="text-[30px] max-lg:text-[40px] text-center text-white max-lg:mb-5">تعهدات ما</h3>
+        <p className="text-white text-[15px] max-lg:text-lg text-center">
           “در لنداسکوپ، ما متعهد به ایجاد فضاهای سبز با دقت و با استفاده از
           روش‌های سازگار با محیط زیست، تضمین کیفیت و ارائه یک تجربه عالی هستیم.”
         </p>
       </div>
-      <div className="w-full flex justify-between items-center gap-x-2">
+      <div className="w-full flex max-lg:flex-col max-lg:gap-y-8 justify-between items-center gap-x-2">
         <div className="flex items-center gap-x-2">
           <img
             src="images/kianmehr.webp"

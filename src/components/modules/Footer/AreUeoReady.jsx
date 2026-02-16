@@ -1,6 +1,6 @@
 export default function AreUeoReady() {
   return (
-    <section className="second-container bg-custom_image w-full h-[343px] py-20 pl-40 bg-green-500 flex items-center gap-x-40">
+    <section className="second-container bg-custom_image w-full lg:h-[343px] py-20 pl-40 bg-green-500">
       <img
         className="absolute bottom-0 right-0"
         src="images/footer/img1.webp"
@@ -12,7 +12,7 @@ export default function AreUeoReady() {
         loading="lazy"
       />
       <img
-        className="absolute top-10 right-20"
+        className="absolute top-10 lg:right-20 max-lg:right-5"
         src="images/footer/img3.png"
         loading="lazy"
       />
@@ -22,23 +22,25 @@ export default function AreUeoReady() {
         loading="lazy"
       />
 
-      <h2 className="relative z-10  text-[55px] text-white max-w-[600px]">
-        آماده‌اید تا فضای بیرونی رویایی‌تان را پرورش دهید؟
-      </h2>
-      <div className="relative z-10 flex flex-col gap-y-6">
-        <h5 className="text-sm leading-7 max-w-[400px] text-white">
-          بگذارید تیم متخصصان فضای سبز ما به شما در طراحی مجدد، احیا و به نمایش
-          گذاشتن بهترین‌ها در فضای بازتان کمک کنند – درست همانطور که تصورش را
-          می‌کنید.
-        </h5>
+      <div className="landscop-container flex max-lg:flex-col max-lg:gap-y-10 items-center gap-x-40">
+        <h2 className="relative z-10 text-[55px] max-lg:text-[30px] text-white lg:max-w-[600px]">
+          آماده‌اید تا فضای بیرونی رویایی‌تان را پرورش دهید؟
+        </h2>
+        <div className="relative z-10 flex flex-col gap-y-6">
+          <h5 className="text-sm leading-7 lg:max-w-[400px] text-white">
+            بگذارید تیم متخصصان فضای سبز ما به شما در طراحی مجدد، احیا و به
+            نمایش گذاشتن بهترین‌ها در فضای بازتان کمک کنند – درست همانطور که
+            تصورش را می‌کنید.
+          </h5>
 
-        <div className="flex items-center gap-x-4">
-          <button className="bg-white text-secondary-color w-[120px] p-4 rounded-lg text-sm cursor-pointer">
-            تماس باما
-          </button>
-          <button className="bg-white text-secondary-color w-[120px] p-4 rounded-lg text-sm cursor-pointer">
-            تماس رایگان!
-          </button>
+          <div className="flex items-center gap-x-4">
+            <button className="bg-white text-secondary-color w-[120px] p-4 rounded-lg text-sm cursor-pointer">
+              تماس باما
+            </button>
+            <button className="bg-white text-secondary-color w-[120px] p-4 rounded-lg text-sm cursor-pointer">
+              تماس رایگان!
+            </button>
+          </div>
         </div>
       </div>
     </section>

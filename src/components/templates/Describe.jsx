@@ -3,9 +3,9 @@ import { IoIosLeaf } from "react-icons/io";
 
 export default function Describe() {
   return (
-    <section className="second-container container mx-auto w-full">
-      <div className="flex items-center justify-center flex-col gap-y-4 my-28">
-        <h2 className="text-[45px] text-[#0A250E] font-bold">
+    <section className="max-xl:px-5 max-lg:px-8 max-md:px-4 landscop-container w-full lg:mx-auto flex flex-col lg:gap-y-24 gap-y-12 lg:my-20 my-10">
+      <div className="flex items-center justify-center flex-col gap-y-4">
+        <h2 className="text-[45px] max-lg:text-3xl text-[#0A250E] font-bold max-lg:text-center">
           به فضاهای بیرونی خود جان ببخشید
         </h2>
         <p className="text-center text-[#0F3714B3] text-[17.5px] font-regular leading-7">
@@ -16,22 +16,19 @@ export default function Describe() {
         </p>
       </div>
 
-      <div className="flex text-center justify-between gap-x-10">
-        <div className="w-[55%] relative">
-          <img
-            src="images/human.jpg"
-            className="w-full h-full rounded-tr-[80px] rounded-bl-[80px]"
-          />
+      <div className="flex max-lg:flex-col max-lg:gap-y-10 text-center justify-between gap-x-10 lg:px-10">
+        <div className="w-[55%] max-lg:w-full relative">
+          <div className="w-full h-[600px] bg-describe bg-cover lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded-tr-[40px] rounded-bl-[40px]" />
 
-          <div className="w-[220px] bg-secondary-color inline-flex flex-col max-w-full items-center pt-7 pb-11 absolute z-20 bottom-1/2 right-full translate-x-8/9 -translate-y-2/8 rounded-tr-[6px] rounded-bl-[6px] rounded-tl-[40px] rounded-br-[40px] overflow-hidden before:content-[''] before:block before:w-full before:h-full before:absolute before:bg-four-color before:opacity-60 before:z-10 before:rounded-full before:-right-1/2 before:top-1/2">
-            <FaLeaf className="text-primary-color" size={40} />
-            <h4 className="text-white text-[70px]">
-              35<span className="text-2xl">+</span>
+          <div className="lg:w-[220px] w-[180px] bg-secondary-color inline-flex flex-col -gap-y-10 items-center pt-7 lg:pb-11 pb-8 absolute z-20 bottom-1/2 right-full lg:translate-x-8/9 translate-x-8/8 max-lg:px-10 lg:-translate-y-3/8 -translate-y-5/8 rounded-tr-[6px] rounded-bl-[6px] lg:rounded-tl-[40px] rounded-tl-[20px] lg:rounded-br-[40px] rounded-br-[20px] overflow-hidden before:content-[''] before:block before:w-full before:h-full before:absolute before:bg-four-color before:opacity-60 before:z-10 before:rounded-full before:-right-1/2 before:top-1/2">
+            <FaLeaf className="text-primary-color lg:text-4xl text-2xl" />
+            <h4 className="text-white lg:text-[70px] text-[60px]">
+              35<span className="text-2xl max-lg:text-xl">+</span>
             </h4>
             <p className="text-white text-xl">سال باغی</p>
           </div>
         </div>
-        <div className="w-[40%] flex items-start flex-col">
+        <div className="w-[40%]  max-lg:w-full flex items-start flex-col">
           <div className="w-full flex items-start flex-col border-b border-dashed border-b-[#97B545]">
             <p className="text-sm flex items-center gap-x-2 flex-row-reverse">
               ما که هستیم
@@ -39,10 +36,13 @@ export default function Describe() {
                 <IoIosLeaf size={24} className="text-[#97B545] rotate-40" />
               </span>
             </p>
-            <h4 className="text-4xl max-w-[500px] text-start">
+            <h4
+              className="lg:text-4xl text-3xl max-lg:text-center
+             max-w-[500px] text-start"
+            >
               طراحی حرفه‌ای فضای سبز و مراقبت از باغ
             </h4>
-            <p className="text-start my-10 text-[#0F3714CC]">
+            <p className="text-start lg:my-10 my-5 text-[#0F3714CC]">
               در لنداسکوپ، ما عاشق خلق فضاهای بیرونی زیبایی هستیم که بتوانید هر
               روز از آنها لذت ببرید. با سال‌ها تجربه و اشتیاق واقعی به باغبانی،
               ما اینجا هستیم تا رویاهای باغبانی شما را با دقت، خلاقیت و لبخند به

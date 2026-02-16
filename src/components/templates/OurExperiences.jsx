@@ -1,6 +1,6 @@
 export default function OurExperiences() {
   return (
-    <article className="max-w-[429px] h-full flex flex-col px-7.5 py-10 items-center justify-between bg-[#F5F2EC]">
+    <article className="max-w-[429px] h-full flex max-lg:gap-y-8 flex-col px-7.5 py-10 items-center justify-between bg-[#F5F2EC]">
       <div className="space-y-4">
         <h3 className="text-[30px] text-center text-[#0F3714]">
           ما از سال 1389 هستیم!
@@ -10,7 +10,7 @@ export default function OurExperiences() {
           تجربه، ما شور و اشتیاق و تخصص را به هر پروژه‌ای می‌آوریم.
         </p>
       </div>
-      <div className="flex items-center gap-x-2">
+      <div className="flex max-lg:flex-col max-lg:gap-y-8 items-center gap-x-2">
         <div className="flex flex-col justify-center items-center gap-y-2">
           <img src="images/svgs/null.svg" className="w-[70px] h-[70px]" />
           <p className="max-w-40 text-wrap text-center text-[#0F3714] text-[17px]">

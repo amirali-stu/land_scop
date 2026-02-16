@@ -4,7 +4,7 @@ export default function PricingPackage({ best = "" }) {
   return (
     <article
       id={best}
-      className="min-w-[406px] relative pt-[41px] px-10 pb-[6px] rounded-[25px] bg-white"
+      className="min-w-[406px] max-lg:min-w-full relative pt-[41px] px-10 pb-[6px] rounded-[25px] bg-white"
     >
       {best && (
         <img

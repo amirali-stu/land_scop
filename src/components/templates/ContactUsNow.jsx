@@ -2,17 +2,17 @@ import { IoArrowBack } from "react-icons/io5";
 
 export default function ContactUsNow() {
   return (
-    <article className="max-w-[429px] h-full flex flex-col px-7.5 py-10 items-center justify-between bg-[#EAF0DA]">
-      <div>
-        <h3 className="text-[30px] text-center text-[#0F3714]">
+    <article className="max-w-[429px] h-full flex max-lg:gap-y-8 flex-col px-7.5 py-10 items-center justify-between bg-[#EAF0DA]">
+      <div className="flex flex-col items-center gap-y-4">
+        <h3 className="text-[30px] max-lg:text-[40px] max-lg:font-bold text-center text-[#0F3714]">
           بیایید امروز صحبت کنیم!
         </h3>
-        <p className="text-[#0F3714] text-[15px] text-center">
+        <p className="text-[#0F3714] text-[15px] max-lg:text-lg text-center">
           “در لنداسکوپ، ما متعهد به ایجاد فضاهای سبز با دقت و با استفاده از
           روش‌های سازگار با محیط زیست، تضمین کیفیت و ارائه یک تجربه عالی هستیم.”
         </p>
       </div>
-      <div className="w-full flex flex-col items-center gap-y-4">
+      <div className="w-full flex flex-col items-center gap-y-4 max-lg:gap-y-10">
         <div className="relative leading-13 w-full h-12.5 pr-8">
           <div className="w-full h-full bg-white px-8 rounded-full">
             <a href="tel:025123456789" className="">
