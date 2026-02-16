@@ -14,7 +14,7 @@ import Users from "./Users";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <header className="landscop-container">
+      <header>
         <TopHeader />
         <NavHeader />
       </header>
