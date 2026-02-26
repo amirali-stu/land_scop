@@ -1,5 +1,19 @@
 import { IoIosLeaf } from "react-icons/io";
 import OurBlogTemplate from "./OurBlogTemplate";
+import Slider from "./Slider";
+import { SwiperSlide } from "swiper/react";
+
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+  },
+  768: {
+    slidesPerView: 2,
+  },
+  1200: {
+    slidesPerView: 3,
+  },
+};
 
 export default function OurBlogs() {
   return (
@@ -22,10 +36,34 @@ export default function OurBlogs() {
               کند.
             </p>
           </div>
-          <div className="flex items-center gap-x-10 max-lg:hidden">
+          {/* <div className="flex items-center gap-x-10 max-lg:hidden">
             <OurBlogTemplate />
-            <OurBlogTemplate />
-          </div>
+          </div> */}
+
+          <Slider
+            customStyles="our-blogs_slider"
+            gap={40}
+            breakpointsCustom={breakpoints}
+          >
+            <SwiperSlide>
+              <OurBlogTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <OurBlogTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <OurBlogTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <OurBlogTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <OurBlogTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <OurBlogTemplate />
+            </SwiperSlide>
+          </Slider>
         </div>
       </section>
     </>

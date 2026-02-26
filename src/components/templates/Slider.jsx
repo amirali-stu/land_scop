@@ -1,6 +1,45 @@
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Slider() {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
+const breakpointsDefault = {
+  0: {
+    slidesPerView: 1,
+  },
+  640: {
+    slidesPerView: 2,
+  },
+  1024: {
+    slidesPerView: 3,
+  },
+};
+
+export default function Slider({
+  customStyles = "",
+  gap = 16,
+  breakpointsCustom = breakpointsDefault,
+  children,
+}) {
   return (
-    <section className="w-full second-container bg-green-600 h-140 flex-center relative z-0">Slider</section>
-  )
+    <>
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        spaceBetween={gap}
+        loop={true}
+        modules={[Pagination]}
+        className={customStyles}
+        breakpoints={breakpointsCustom}
+      >
+        {children}
+      </Swiper>
+    </>
+  );
 }

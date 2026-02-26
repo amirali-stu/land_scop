@@ -4,7 +4,7 @@ import { FaLocationDot, FaPeopleGroup } from "react-icons/fa6";
 
 function LatestProjectSliderTemplate() {
   return (
-    <article className="w-[373px] h-[370px] relative bg-red-600 rounded-[25px] p-5  overflow-hidden group">
+    <article className="sm:max-w-[373px] max-sm:w-full h-[370px] relative bg-red-600 rounded-[25px] p-5  overflow-hidden group">
       <img
         src="images/our/img1.webp"
         className="w-full h-full absolute inset-0"

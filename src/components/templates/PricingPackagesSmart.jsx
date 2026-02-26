@@ -3,7 +3,7 @@ import PricingPackage from "./PricingPackage";
 
 export default function PricingPackagesSmart() {
   return (
-    <section className="second-container w-full pricing-package_bg py-20 ">
+    <section className="p-4 lg:p-4 lg:py-16 w-full pricing-package_bg py-20 ">
       <div className="landscop-container flex flex-col gap-y-10">
         <div className="text-black flex max-lg:items-start flex-col items-center gap-y-4">
           <p className="flex items-center text-[22px] max-lg:text-lg font-bold text-secondary-color flex-row-reverse gap-x-2">
@@ -20,7 +20,7 @@ export default function PricingPackagesSmart() {
           </p>
         </div>
 
-        <div className="flex max-lg:flex-wrap max-lg:gap-y-8 max-lg:flex-col items-center gap-x-8 mt-20">
+        <div className="flex lg:gap-x-4 flex-wrap gap-y-8 max-lg:flex-col items-center gap-x-8 mt-20 ">
           <PricingPackage />
           <PricingPackage best={"top_level"} />
           <PricingPackage />

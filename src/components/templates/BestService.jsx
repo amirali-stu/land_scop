@@ -1,6 +1,9 @@
 import { IoIosLeaf } from "react-icons/io";
 import { IoArrowBack } from "react-icons/io5";
 import BestServiceSliderTemplate from "./BestServiceSliderTemplate";
+import BestServiceSlider from "./BestServiceSlider";
+import Slider from "./Slider";
+import { SwiperSlide } from "swiper/react";
 
 export default function BestService() {
   return (
@@ -15,7 +18,9 @@ export default function BestService() {
                 <IoIosLeaf size={24} className="text-[#97B545] rotate-40" />
               </span>
             </p>
-            <h2 className="text-[45px] max-lg:text-3xl">فضای شما. مراقبت ما. طبیعتاً بهتر</h2>
+            <h2 className="text-[45px] max-lg:text-3xl">
+              فضای شما. مراقبت ما. طبیعتاً بهتر
+            </h2>
             <p className="text-[#FFFFFFCC] text-[17px] max-w-155">
               از طرح‌های رویایی گرفته تا نگهداری باشکوه، خدمات ما فضاهای بیرونی
               شما را به آثار هنری زنده تبدیل می‌کند.
@@ -29,11 +34,25 @@ export default function BestService() {
           </button>
         </div>
         {/* slider */}
-        <div className="flex items-center gap-x-4 mt-10">
-          <BestServiceSliderTemplate />
-          <BestServiceSliderTemplate />
-          <BestServiceSliderTemplate />
-        </div>
+
+        {/* <BestServiceSlider /> */}
+        <Slider customStyles={"best-service_slider"}>
+          <SwiperSlide>
+            <BestServiceSliderTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <BestServiceSliderTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <BestServiceSliderTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <BestServiceSliderTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <BestServiceSliderTemplate />
+          </SwiperSlide>
+        </Slider>
       </div>
     </section>
   );

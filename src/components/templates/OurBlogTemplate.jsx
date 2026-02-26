@@ -3,7 +3,7 @@ import { FaComments, FaUser } from "react-icons/fa";
 
 export default function OurBlogTemplate() {
   return (
-    <article className="rounded-[25px] p-4 overflow-hidden relative w-[440px] h-[394px] group">
+    <article className="rounded-[25px] p-4 overflow-hidden relative md:max-w-[480px] max-md:w-full h-[394px] group">
       <img
         src="images/bg1.jpg"
         loading="lazy"

@@ -2,13 +2,13 @@ import { BsStarFill } from "react-icons/bs";
 
 export default function CommentTemplate() {
   return (
-    <article className="relative min-w-[600px] pt-[19px] px-10 pb-[57px] rounded-[25px] bg-white">
+    <article className="relative lg:max-w-[600px] max-lg:w-full pt-[19px] px-10 pb-[57px] rounded-[25px] bg-white">
       <img
         src="images/user.webp"
         className="rounded-full w-25 h-25 absolute -top-7"
         loading="lazy"
       />
-      <div className="flex items-center justify-between border-b border-dashed border-b-primary-color pb-8 pt-2.5 pr-28">
+      <div className="flex max-sm:flex-wrap max-sm:justify-around max-sm:gap-y-2 items-center justify-between border-b border-dashed border-b-primary-color pb-8 pt-2.5 pr-28">
         <div className="flex items-center gap-x-5">
           <div className="text-secondary-color flex flex-col gap-y-1">
             <h5 className=" text-[17px] font-semibold">الناز رضایی مقدم</h5>

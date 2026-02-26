@@ -441,3 +441,22 @@ body {
     /* box-shadow: 0px 10px 20px #0000000f; */
   }
 }
+
+.best-service_slider .swiper-wrapper {
+  @apply mt-10;
+}
+
+.latest-project_slider {
+  @apply w-full flex items-center justify-center p-2;
+}
+
+.customer-review_slider {
+  @apply relative w-full flex items-center;
+}
+.customer-review_slider .swiper-wrapper {
+  @apply relative py-7;
+}
+
+.our-blogs_slider {
+  @apply relative w-full flex items-center;
+}

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { IoIosLeaf } from "react-icons/io";
 import LatestProjectSliderTemplate from "./LatestProjectSliderTemplate";
+import LatestProjectSlider from "./LatestProjectSlider";
+import Slider from "./Slider";
+import { SwiperSlide } from "swiper/react";
 
 const projects = [
   { id: 1, name: "project1", identity: "garden" },
@@ -18,6 +21,18 @@ const filters = [
   { label: "کشاورزی شهری", value: "agriculture" },
   { label: "نورپردازی فضای باز", value: "lighting" },
 ];
+
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+  },
+  580: {
+    slidesPerView: 2,
+  },
+  1000: {
+    slidesPerView: 3,
+  },
+};
 
 export default function LatestProjects() {
   const [selectedFilter, setSelectedFilter] = useState("all");
@@ -82,10 +97,22 @@ export default function LatestProjects() {
             </button>
           </div>
 
-          <div className="w-full flex items-center justify-center gap-x-4 max-lg:hidden">
-            {filteredProjects.map((item) => (
-              <LatestProjectSliderTemplate />
-            ))}
+          {/* <div className=" max-lg:hidden">
+            
+          </div> */}
+          {/* <LatestProjectSlider filteredProjects={filteredProjects} /> */}
+          <div className="p-4">
+            <Slider
+              customStyles={"latest-project_slider"}
+              gap={16}
+              breakpointsCustom={breakpoints}
+            >
+              {filteredProjects.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <LatestProjectSliderTemplate />
+                </SwiperSlide>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>

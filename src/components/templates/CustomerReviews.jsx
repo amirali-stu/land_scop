@@ -1,5 +1,16 @@
 import { IoIosLeaf } from "react-icons/io";
 import CommentTemplate from "./CommentTemplate";
+import Slider from "./Slider";
+import { SwiperSlide } from "swiper/react";
+
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+  },
+  1023: {
+    slidesPerView: 2,
+  },
+};
 
 export default function CustomerReviews() {
   return (
@@ -26,10 +37,25 @@ export default function CustomerReviews() {
             مشاهده همه نظرات
           </button>
         </div>
-        <div className="flex items-center gap-x-10 max-lg:hidden">
-          <CommentTemplate />
-          <CommentTemplate />
-        </div>
+
+        <Slider
+          customStyles="customer-review_slider"
+          gap={40}
+          breakpointsCustom={breakpoints}
+        >
+          <SwiperSlide>
+            <CommentTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CommentTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CommentTemplate />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CommentTemplate />
+          </SwiperSlide>
+        </Slider>
       </div>
     </section>
   );

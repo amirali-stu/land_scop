@@ -6,7 +6,7 @@ import LatestProjects from "./components/templates/latestProjects";
 import OurBlogs from "./components/templates/OurBlogs";
 import OurFeatures from "./components/templates/OurFeatures";
 import PricingPackagesSmart from "./components/templates/PricingPackagesSmart";
-import Slider from "./components/templates/Slider";
+import Slider from "./components/templates/Hiro";
 import WhatUs from "./components/templates/WhatUs";
 import WhyUs from "./components/templates/WhyUs";
 import WorkProcess from "./components/templates/WorkProcess";
