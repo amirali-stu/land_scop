@@ -6,11 +6,11 @@
 }
 @font-face {
   font-family: "sans-medium";
-  src: url("fonts/Sans/Sans-Medium.ttf");
+  src: url("public/fonts/Sans/Sans-Medium.ttf");
 }
 @font-face {
   font-family: "sans-regular";
-  src: url("fonts/Sans/Sans-Regular.ttf");
+  src: url("public/fonts/Sans/Sans-Regular.ttf");
 }
 
 @layer components {
