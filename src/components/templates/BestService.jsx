@@ -1,7 +1,6 @@
 import { IoIosLeaf } from "react-icons/io";
 import { IoArrowBack } from "react-icons/io5";
 import BestServiceSliderTemplate from "./BestServiceSliderTemplate";
-import BestServiceSlider from "./BestServiceSlider";
 import Slider from "./Slider";
 import { SwiperSlide } from "swiper/react";
 

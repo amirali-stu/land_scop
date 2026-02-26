@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { IoIosLeaf } from "react-icons/io";
 import LatestProjectSliderTemplate from "./LatestProjectSliderTemplate";
-import LatestProjectSlider from "./LatestProjectSlider";
 import Slider from "./Slider";
 import { SwiperSlide } from "swiper/react";
 

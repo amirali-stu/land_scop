@@ -3,6 +3,7 @@ import { MdAccessTimeFilled, MdMarkEmailUnread } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { ImInstagram } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
+import { FaTelegramPlane, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -10,7 +11,11 @@ export default function Footer() {
       <div className="landscop-container flex max-lg:flex-col max-lg:gap-y-10 gap-x-20">
         {/* contact us */}
         <div className="flex flex-col gap-y-10">
-          <img src="images/footer/landscop.png" loading="lazy" className="max-lg:w-[183px] max-lg:h-[40px]" />
+          <img
+            src="images/footer/landscop.png"
+            loading="lazy"
+            className="max-lg:w-[183px] max-lg:h-[40px]"
+          />
 
           <ul className="flex flex-col gap-y-5">
             <li className="flex items-center gap-x-2">
@@ -191,23 +196,26 @@ export default function Footer() {
 
           <ul className="flex items-center gap-x-5">
             <li className="rounded-full w-12.5 h-12.5 flex-center bg-[#eaf0da80] text-white transition-all duration-300 hover:bg-primary-color">
-              <a href="#">
+              <a href="https://www.instagram.com/amirali.react" target="_blank">
                 <BsInstagram size={22} />
               </a>
             </li>
             <li className="rounded-full w-12.5 h-12.5 flex-center bg-[#eaf0da80] text-white transition-all duration-300 hover:bg-primary-color">
-              <a href="#">
-                <BsInstagram size={22} />
+              <a href="http://t.me/amiralimosolo" target="_blank">
+                <FaTelegramPlane size={22} />
               </a>
             </li>
             <li className="rounded-full w-12.5 h-12.5 flex-center bg-[#eaf0da80] text-white transition-all duration-300 hover:bg-primary-color">
-              <a href="#">
-                <BsInstagram size={22} />
+              <a
+                href="https://www.linkedin.com/in/amir-ali-mosolo-19747a380/"
+                target="_blank"
+              >
+                <FaLinkedinIn size={22} />
               </a>
             </li>
             <li className="rounded-full w-12.5 h-12.5 flex-center bg-[#eaf0da80] text-white transition-all duration-300 hover:bg-primary-color">
-              <a href="#">
-                <BsInstagram size={22} />
+              <a href="https://github.com/amirali-stu" target="_blank">
+                <FaGithub size={22} />
               </a>
             </li>
           </ul>
