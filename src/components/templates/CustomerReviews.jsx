@@ -1,7 +1,9 @@
 import { IoIosLeaf } from "react-icons/io";
 import CommentTemplate from "./CommentTemplate";
-import Slider from "./Slider";
+
 import { SwiperSlide } from "swiper/react";
+import { lazy, Suspense } from "react";
+import SliderLoadingTemplate from "./SliderLoadingTemplate";
 
 const breakpoints = {
   0: {
@@ -13,6 +15,8 @@ const breakpoints = {
 };
 
 export default function CustomerReviews() {
+  const Slider = lazy(() => import("./Slider"));
+
   return (
     <section className="second-container w-full bg-[#0a250eb0] relative bg-custom_jangle pt-20 pb-30">
       <div className="landscop-container flex flex-col gap-y-10 ">
@@ -38,24 +42,34 @@ export default function CustomerReviews() {
           </button>
         </div>
 
-        <Slider
-          customStyles="customer-review_slider"
-          gap={40}
-          breakpointsCustom={breakpoints}
+        <Suspense
+          fallback={
+            <div className="max-sm:flex-wrap gap-y-8 flex items-center my-8 gap-x-8">
+              <SliderLoadingTemplate />
+              <SliderLoadingTemplate />
+              <SliderLoadingTemplate />
+            </div>
+          }
         >
-          <SwiperSlide>
-            <CommentTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CommentTemplate />
-          </SwiperSlide>
-        </Slider>
+          <Slider
+            customStyles="customer-review_slider"
+            gap={40}
+            breakpointsCustom={breakpoints}
+          >
+            <SwiperSlide>
+              <CommentTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CommentTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CommentTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CommentTemplate />
+            </SwiperSlide>
+          </Slider>
+        </Suspense>
       </div>
     </section>
   );

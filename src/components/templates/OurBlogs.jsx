@@ -1,7 +1,9 @@
 import { IoIosLeaf } from "react-icons/io";
 import OurBlogTemplate from "./OurBlogTemplate";
-import Slider from "./Slider";
+
 import { SwiperSlide } from "swiper/react";
+import { lazy, Suspense } from "react";
+import SliderLoadingTemplate from "./SliderLoadingTemplate";
 
 const breakpoints = {
   0: {
@@ -16,6 +18,8 @@ const breakpoints = {
 };
 
 export default function OurBlogs() {
+  const Slider = lazy(() => import("./Slider"));
+
   return (
     <>
       <section className="second-container w-full py-20">
@@ -40,30 +44,40 @@ export default function OurBlogs() {
             <OurBlogTemplate />
           </div> */}
 
-          <Slider
-            customStyles="our-blogs_slider"
-            gap={40}
-            breakpointsCustom={breakpoints}
+          <Suspense
+            fallback={
+              <div className="max-sm:flex-wrap gap-y-8 flex items-center my-8 gap-x-8">
+                <SliderLoadingTemplate />
+                <SliderLoadingTemplate />
+                <SliderLoadingTemplate />
+              </div>
+            }
           >
-            <SwiperSlide>
-              <OurBlogTemplate />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OurBlogTemplate />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OurBlogTemplate />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OurBlogTemplate />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OurBlogTemplate />
-            </SwiperSlide>
-            <SwiperSlide>
-              <OurBlogTemplate />
-            </SwiperSlide>
-          </Slider>
+            <Slider
+              customStyles="our-blogs_slider"
+              gap={40}
+              breakpointsCustom={breakpoints}
+            >
+              <SwiperSlide>
+                <OurBlogTemplate />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OurBlogTemplate />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OurBlogTemplate />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OurBlogTemplate />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OurBlogTemplate />
+              </SwiperSlide>
+              <SwiperSlide>
+                <OurBlogTemplate />
+              </SwiperSlide>
+            </Slider>
+          </Suspense>
         </div>
       </section>
     </>

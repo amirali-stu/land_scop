@@ -1,10 +1,13 @@
 import { IoIosLeaf } from "react-icons/io";
 import { IoArrowBack } from "react-icons/io5";
 import BestServiceSliderTemplate from "./BestServiceSliderTemplate";
-import Slider from "./Slider";
 import { SwiperSlide } from "swiper/react";
+import { lazy, Suspense } from "react";
+import SliderLoadingTemplate from "./SliderLoadingTemplate";
 
 export default function BestService() {
+  const Slider = lazy(() => import("./Slider"));
+
   return (
     <section className="second-container w-full bg-[#0F3714] bg-custom overflow-hidden py-20">
       <div className="landscop-container">
@@ -35,23 +38,33 @@ export default function BestService() {
         {/* slider */}
 
         {/* <BestServiceSlider /> */}
-        <Slider customStyles={"best-service_slider"}>
-          <SwiperSlide>
-            <BestServiceSliderTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <BestServiceSliderTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <BestServiceSliderTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <BestServiceSliderTemplate />
-          </SwiperSlide>
-          <SwiperSlide>
-            <BestServiceSliderTemplate />
-          </SwiperSlide>
-        </Slider>
+        <Suspense
+          fallback={
+            <div className="max-sm:flex-wrap gap-y-8 flex items-center my-8 gap-x-8">
+              <SliderLoadingTemplate />
+              <SliderLoadingTemplate />
+              <SliderLoadingTemplate />
+            </div>
+          }
+        >
+          <Slider customStyles={"best-service_slider"}>
+            <SwiperSlide>
+              <BestServiceSliderTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BestServiceSliderTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BestServiceSliderTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BestServiceSliderTemplate />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BestServiceSliderTemplate />
+            </SwiperSlide>
+          </Slider>
+        </Suspense>
       </div>
     </section>
   );

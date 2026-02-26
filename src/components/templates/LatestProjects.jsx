@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { IoIosLeaf } from "react-icons/io";
 import LatestProjectSliderTemplate from "./LatestProjectSliderTemplate";
-import Slider from "./Slider";
 import { SwiperSlide } from "swiper/react";
+import SliderLoadingTemplate from "./SliderLoadingTemplate";
 
 const projects = [
   { id: 1, name: "project1", identity: "garden" },
@@ -45,6 +45,7 @@ export default function LatestProjects() {
       setFilteredProjects(projects.filter((item) => item.identity === filter));
     }
   };
+  const Slider = lazy(() => import("./Slider"));
 
   return (
     <section className="w-full py-20">
@@ -90,28 +91,31 @@ export default function LatestProjects() {
 
             <button className="flex h-12 items-center gap-x-4 text-white bg-primary-color rounded-lg p-4 cursor-pointer">
               مشاهده همه پروژه ها
-              {/* <span>
-              <IoArrowBack />
-            </span> */}
             </button>
           </div>
 
-          {/* <div className=" max-lg:hidden">
-            
-          </div> */}
-          {/* <LatestProjectSlider filteredProjects={filteredProjects} /> */}
           <div className="p-4">
-            <Slider
-              customStyles={"latest-project_slider"}
-              gap={16}
-              breakpointsCustom={breakpoints}
+            <Suspense
+              fallback={
+                <div className="max-sm:flex-wrap gap-y-8 flex items-center my-8 gap-x-8">
+                  <SliderLoadingTemplate />
+                  <SliderLoadingTemplate />
+                  <SliderLoadingTemplate />
+                </div>
+              }
             >
-              {filteredProjects.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <LatestProjectSliderTemplate />
-                </SwiperSlide>
-              ))}
-            </Slider>
+              <Slider
+                customStyles={"latest-project_slider"}
+                gap={16}
+                breakpointsCustom={breakpoints}
+              >
+                {filteredProjects.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <LatestProjectSliderTemplate />
+                  </SwiperSlide>
+                ))}
+              </Slider>
+            </Suspense>
           </div>
         </div>
       </div>
