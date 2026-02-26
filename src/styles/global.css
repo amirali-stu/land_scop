@@ -324,85 +324,37 @@ body {
 
 /*!  infinity slider  */
 .logo-slider {
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
-  display: flex;
-  align-items: center;
   background-color: #eaf0da;
-  position: relative;
   height: 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .wrapper-slider {
   width: 100%;
-  height: 100%;
-  max-width: 1800px;
+}
+
+.slide-track {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  width: max-content;
+  animation: scroll 10s linear infinite;
 }
 
-.wrapper-slider::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 80px;
-  height: 200px;
-  background-image: linear-gradient(to right, #eaf0da, transparent);
-  z-index: 1;
-}
-.wrapper-slider::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 80px;
-  height: 200px;
-  background-image: linear-gradient(to left, #eaf0da, transparent);
-  z-index: 1;
-}
-
-.logo-track {
+.slide-track img {
   width: 150px;
-  position: absolute;
-  animation: 10s linear infinite;
-  right: 1600px;
-  animation-name: scroll;
+  margin-right: 60px; /* به جای gap */
+  flex-shrink: 0;
 }
 
 @keyframes scroll {
-  to {
-    right: -100px;
+  from {
+    transform: translateX(0);
   }
-}
-.logo1 {
-  animation-delay: -26.3s;
-}
-.logo2 {
-  animation-delay: -22.5s;
-}
-.logo3 {
-  animation-delay: -18.75s;
-}
-.logo4 {
-  animation-delay: -15s;
-}
-.logo5 {
-  animation-delay: -13.75s;
-}
-.logo6 {
-  animation-delay: -7.5s;
-}
-.logo7 {
-  animation-delay: -3.75s;
-}
-.logo8 {
-  animation-delay: 2.75s;
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /*!  infinity slider  */
