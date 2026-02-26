@@ -6,13 +6,13 @@
 }
 @font-face {
   font-family: "sans-medium";
-  src: url("public/fonts/Sans/Sans-Medium.ttf");
-}
-@font-face {
-  font-family: "sans-regular";
-  src: url("public/fonts/Sans/Sans-Regular.ttf");
+  src: url("/fonts/Sans/Sans-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "sans-regular";
+  src: url("/fonts/Sans/Sans-Regular.ttf") format("truetype");
+}
 @layer components {
   .container {
     @apply max-w-full flex flex-col;
